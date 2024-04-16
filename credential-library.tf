@@ -11,5 +11,5 @@ resource "boundary_credential_ssh_private_key" "static_ssh_key" {
   description         = "Boundary Static SSH credential"
   credential_store_id = boundary_credential_store_static.static_cred_store.id
   username            = "ec2-user"
-  private_key         = file("boundary.pem")
+  private_key         = file("../boundary.pem")
 }
